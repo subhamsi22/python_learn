@@ -18,6 +18,3 @@
 
 
 
-
-a  = "\a subham singh ia a smart boy \n not a \"bad boy\" \t he is a very smart boy"
-print(a)
