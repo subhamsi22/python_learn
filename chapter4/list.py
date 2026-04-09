@@ -6,7 +6,7 @@
 
 
 friend  =["subham","sanju","akashay",23,9.2,False]
-print(friend[5])
+print(friend[4])
 
 friend[5] =  True
 print(friend[5])

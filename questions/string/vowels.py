@@ -1,2 +1,7 @@
 a = "subham singh"
-print(a.count("a","e","i","o","u"))  
+
+b = 0
+for i in a:
+    if i in ["a","e","i","o","u"]:
+        b += 1
+print(b)
