@@ -41,8 +41,30 @@ while choice_input != 5:
 
     elif choice_input == 3:
         print("3. Multi-Plot Layout")
+        data1 =  np.arange(1,6)
+        data2 = np.arange(6,11)
+        plt.xlabel("marks")
+        plt.subplot(1,2,1)
+        plt.plot(data1,data2,"o")
+        plt.ylabel("year")
+        plt.subplot(1,2,2)
+        plt.plot(data2,data1,"o")
+        plt.tight_layout()
+        plt.show()
     elif choice_input == 4:
         print("4. Customizing Styles")
+        print("i use option 1 slide hear")
+        days = np.array([1,2,3,4,5])
+        height  = np.array([2,4,8,14,20])
+        plt.plot(days,height)
+        plt.plot(days,height,"--")
+        plt.title("Plant Growth Over Time")
+        plt.xlabel("days")
+        plt.ylabel("height")
+        plt.legend()
+        plt.savefig("plt.png")
+        plt.show()
+
     else:
         print("Invalid choice")
     choice_input =  int(input("Enter your choice : "))
