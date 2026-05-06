@@ -1,16 +1,14 @@
-import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] 
 
-data={
-       "rent":1200,
-       "food":450,
-       "utilities":200,
-       "transport":150,
-       "entertainment":300
-} 
-plt.bar(data)
-plt.title("monthly expense breakdown")
-plt.xlabel("----categories-----")
-plt.ylabel("----amount(usd)-----")
+low = [23,25,24,26,28,27,29]
+high = [28,29,30,27,26,28,29]
+plt.plot(days,low,color="blue",marker="o",label="low")
+plt.plot(days,high,color="red",linestyle="--",marker="s",label="high")
+plt.title("weekly temprature")
+plt.xlabel("days")
+plt.ylabel("temperature")
+plt.legend(loc="upper left")
+plt.grid(True)
 plt.show()
